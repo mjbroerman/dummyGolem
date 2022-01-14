@@ -59,6 +59,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          build-args: |
+            DB_USR=${{ secrets.PULCE_DASH_USR}}
+            DB_PWD=${{ secrets.PULCE_DASH_PWD}}
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
           file: ./Dockerfile
 
