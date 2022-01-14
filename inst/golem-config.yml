@@ -2,7 +2,11 @@ default:
   golem_name: dummyGolem
   golem_version: 0.0.0.9000
   app_prod: no
+  uid: !expr Sys.getenv("DB_USR")
+  pwd: !expr Sys.getenv("DB_PWD")
 production:
   app_prod: yes
+  uid: !expr Sys.getenv("DB_USR")
+  pwd: !expr Sys.getenv("DB_PWD")
 dev:
   golem_wd: !expr here::here()
