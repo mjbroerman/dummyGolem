@@ -10,7 +10,7 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic 
     fluidPage(
-      h1("dummyGolem"),
+      h1("dummyGolem!"),
       mod_kmeans_ui("kmeans_ui_1")
     )
   )
