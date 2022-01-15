@@ -11,6 +11,7 @@ app_ui <- function(request) {
     # Your application UI logic 
     fluidPage(
       h1("dummyGolem!"),
+      mod_show_config_ui("show_config_ui_1"),
       mod_kmeans_ui("kmeans_ui_1")
     )
   )
